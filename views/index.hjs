@@ -15,34 +15,40 @@
 
   </nav>
 
-  <div class="container ">
+  <div class="container">
+    {{#name}}
     <h1>This is the {{name}} Template!!</h1>
-    <p>Today is {{date}}.<br>
+    {{/name}}
+     <h3>Today is {{date}}.</h3> <br>
       {{#user}}
-        My name is {{user.username}}</p>
+      Hello, My name is {{user.username}}</p>
         {{/user}}
 <ol>
-  <h6>Please add to my list with a little info about yourself.</h6>
+  <h5> <u>Please add to my list with a little info about yourself.</u> </h5> <br>
 {{#profiles}}
 
 <li>
-  {{name}}, {{city}},
-{{#profession}}
-Profession: {{profession}}
+  <b>{{name}} </b> is from {{city}} and works as a {{#profession}}
+{{profession}}
 {{/profession}}
-</li>
+</li> <br>
 {{/profiles}}
 </ol>
+
 <h3>About You</h3>
-<form class="" action="/join" method="post"><br>
-<input type="text" name="name" placeholder="Name"><br>
-<input type="text" name="city" placeholder="City"><br>
-<input type="text" name="profession" placeholder="Profession"><br>
-<input type="submit" value="Add Profile">
+<form class="" action="/join" method="post">
+<input type="text" name="name" placeholder="Name"><br><br>
+<input type="text" name="city" placeholder="City"><br><br>
+<input type="text" name="profession" placeholder="Profession"><br><br>
+<input class="btn btn-outline-warning" type="submit" value="Add Profile">
 
 </form>
 
+
   </div>
 
+  <footer>
+
+  </footer>
 </body>
 </html>

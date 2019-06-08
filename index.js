@@ -6,6 +6,7 @@ const moment = require('moment')
 
 const app = express()
 
+app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyParser.urlencoded({extended:false}))
 

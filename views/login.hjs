@@ -5,13 +5,14 @@
 </head>
 <body>
   <div class="container">
+
 <h1>Login</h1>
-<form class="" action="/login" method="post">
-  <input type="text" name="username" placeholder="Username"> <br>
-    <input type="password" name="password" placeholder="Password"> <br>
-    <input type="submit"  value="Log In">
+<form class="form-group" action="/login" method="post">
+  <input class="from-control" type="text" name="username" placeholder="Username"><br><br>
+    <input class="from-control" type="password" name="password" placeholder="Password"> <br><br>
+    <input class="btn btn-outline-warning" type="submit"  value="Log In">
 </form>
   </div>
-
+   <!-- <img src="images/nebula.jpg" alt=""> -->
 </body>
 </html>

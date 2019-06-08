@@ -4,7 +4,7 @@ let user = null
 
 const profiles = [
   {name: 'Joe', city:'Brooklyn',profession:'Doctor'},
-  {name: 'Mike', city:'Brooklyn'},
+  {name: 'Mike', city:'Brooklyn', profession: 'Software Developer'},
   {name: 'Bill', city:'Denver',profession:'Programmer'}
 
 ]
@@ -13,7 +13,7 @@ const profiles = [
 router.get('/', (req, res, next) => {
 
   const data = {
-    name: "Express Index Page",
+    name: "Getting to know you",
     date: req.timestamp,
     profiles: profiles,
     user: user
